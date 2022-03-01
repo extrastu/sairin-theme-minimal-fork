@@ -1,6 +1,6 @@
 {
   "name": "sairin-theme-minimal-fork",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "lib/index.js",
   "scripts": {
     "dev": "concurrently npm:dev-theme npm:dev-style",
@@ -12,7 +12,7 @@
     "prepublish": "npm run build"
   },
   "devDependencies": {
-    "@sairinjs/core": "^1",
+    "@sairinjs/core": "workspace:*",
     "autoprefixer": "^10.4.2",
     "concurrently": "^7.0.0",
     "next": "^12.1.0",
