@@ -59,16 +59,6 @@ export default function Post(props: PostPageThemeProps) {
                   </a>
                 )
               })}
-
-              {props.post.labels.nodes.map(label => {
-                return (
-                  label.name !== 'published' ? <a href={label.url} target="_blank">
-                    <div className='flex gap-2 border border-blue-100 px-4 py-1 rounded-full items-center' style={{ backgroundColor: "#" + label.color }}>
-                      <span className='text-md'>{label.name}</span>
-                    </div>
-                  </a> : null
-                )
-              })}
             </div>
           </div>
         </div>
