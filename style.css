@@ -582,6 +582,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 2rem;
 }
 
+.w-full {
+  width: 100%;
+}
+
 .max-w-full {
   max-width: 100%;
 }
@@ -596,6 +600,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .items-center {
   align-items: center;
+}
+
+.justify-between {
+  justify-content: space-between;
 }
 
 .gap-2 {
@@ -637,13 +645,18 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-color: rgb(55 65 81 / var(--tw-border-opacity));
 }
 
-.bg-slate-50\/90 {
-  background-color: rgb(248 250 252 / 0.9);
+.border-gray-400 {
+  --tw-border-opacity: 1;
+  border-color: rgb(156 163 175 / var(--tw-border-opacity));
 }
 
 .bg-gray-100 {
   --tw-bg-opacity: 1;
   background-color: rgb(243 244 246 / var(--tw-bg-opacity));
+}
+
+.bg-slate-50\/90 {
+  background-color: rgb(248 250 252 / 0.9);
 }
 
 .bg-blue-50 {
@@ -677,6 +690,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .pl-4 {
   padding-left: 1rem;
+}
+
+.align-middle {
+  vertical-align: middle;
 }
 
 .font-sans {
@@ -738,6 +755,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-gray-500 {
   --tw-text-opacity: 1;
   color: rgb(107 114 128 / var(--tw-text-opacity));
+}
+
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .underline {
@@ -937,13 +959,6 @@ pre > code.highlight {
 
 body {
   font-family: 'IBM Plex Serif', serif;
-  background-color: rgb(248 250 252 / 0.9)
-}
-
-@media (prefers-color-scheme: dark) {
-  body {
-    background-color: rgb(71 85 105 / 0.9);
-  }
 }
 
 .post-body p, pre {
@@ -1008,9 +1023,24 @@ body {
   padding-left: 1rem;
 }
 
+html {
+  background-color: rgb(248 250 252 / 0.9);
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    background-color: rgb(71 85 105 / 0.9);
+  }
+}
+
 .hover\:bg-gray-700:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(55 65 81 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-gray-400:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(156 163 175 / var(--tw-bg-opacity));
 }
 
 .hover\:text-gray-100:hover {
@@ -1050,4 +1080,3 @@ body {
     padding-right: 0px;
   }
 }
-

@@ -11,8 +11,8 @@ export default function Home(props: HomePageThemeProps) {
       <Head>
         <title>{props.themeConfig.title}</title>
       </Head>
-      <div className="container mx-auto max-w-2xl  px-4 sm:px-0 relative bg-slate-50/90 dark:bg-slate-600/90">
-        <div className="text-3xl font-bold mb-4 sticky top-0 py-3 flex items-center text-slate-900 dark:text-slate-200 bg-slate-50/90 dark:bg-slate-600/90 backdrop-blur-sm ">
+      <div className="container mx-auto max-w-2xl  px-4 sm:px-0 relative ">
+        <div className="text-3xl font-bold mb-4 sticky top-0 py-3 flex items-center text-slate-900 dark:text-slate-200  backdrop-blur-sm ">
           {props.themeConfig.title}
         </div>
 
