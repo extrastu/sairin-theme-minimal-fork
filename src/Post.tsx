@@ -19,28 +19,28 @@ export default function Post(props: PostPageThemeProps) {
         <OpenGraph post={props.post} />
       </Head>
 
-      <div className="container mx-auto  max-w-2xl px-4 sm:px-0 relative ">
+      <div className="container mx-auto   sm:px-0 relative ">
 
         <div className='sticky top-0 py-3 flex items-center text-slate-900 dark:text-slate-200  backdrop-blur-sm'>
-          <div className="flex text-2xl font-bold mb-4 justify-between w-full align-middle">
+          <div className="flex  text-2xl  px-4 font-bold mb-4 justify-between w-full align-middle">
             <Link href="/">{props.themeConfig.title}</Link>
-            <span className='text-white dark:text-gray-400'><Link href="/"><svg t="1646129169164" class="icon" viewBox="0 0 1045 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2202" width="32" height="32"><path d="M282.517333 213.376l-45.354666 45.162667L489.472 512 237.162667 765.461333l45.354666 45.162667L534.613333 557.354667l252.096 253.269333 45.354667-45.162667-252.288-253.44 252.288-253.482666-45.354667-45.162667L534.613333 466.624l-252.096-253.226667z" p-id="2203"></path></svg></Link></span>
+            <span className='text-white dark:text-gray-400 cursor-pointer hidden'><Link href="/"><svg t="1646129169164" class="icon" viewBox="0 0 1045 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2202" width="32" height="32"><path d="M282.517333 213.376l-45.354666 45.162667L489.472 512 237.162667 765.461333l45.354666 45.162667L534.613333 557.354667l252.096 253.269333 45.354667-45.162667-252.288-253.44 252.288-253.482666-45.354667-45.162667L534.613333 466.624l-252.096-253.226667z" p-id="2203"></path></svg></Link></span>
           </div>
         </div>
 
-        <div className="mb-8">
+        <div className="mb-8  px-4">
           <div className='text-3xl font-medium dark:text-gray-400'>
             {props.post.title}
           </div>
 
-          <div className='flex mt-4 items-center gap-2 dark:text-gray-400'>
+          <div className='flex mt-4  items-center gap-2 dark:text-gray-400'>
             <img className='w-8 h-8 rounded-full' src={props.post.author.avatarUrl}></img>
             <a target='_blank' href={props.post.author.url}>{props.post.author.login}</a>
             <a className='underline text-sm' target='_blank' href={props.post.url}>View on GitHub</a>
           </div>
 
           {props.post.reactionGroups.filter(group => group.reactors.totalCount !== 0).length ?
-            <div className='my-8'>
+            <div className='my-8 '>
               <div className='flex gap-4 flex-wrap'>
                 {
                   props.post.reactionGroups.filter(group => group.reactors.totalCount !== 0).map(reactionGroup => {
@@ -76,13 +76,13 @@ export default function Post(props: PostPageThemeProps) {
             : null}
         </div>
 
-        <div className="post-body dark:text-gray-400" dangerouslySetInnerHTML={{ __html: props.post.html }}>
+        <div className="post-body  px-4 dark:text-gray-400" dangerouslySetInnerHTML={{ __html: props.post.html }}>
 
         </div>
 
         <hr className='my-12' />
 
-        <div className="font-sans">
+        <div className="font-sans px-4">
           {/* <h1 className='text-md mb-8'>🗣 Comments</h1> */}
 
           <div className='mb-12'>

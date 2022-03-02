@@ -11,13 +11,13 @@ export default function Home(props: HomePageThemeProps) {
       <Head>
         <title>{props.themeConfig.title}</title>
       </Head>
-      <div className="container mx-auto max-w-2xl  px-4 sm:px-0 relative ">
-        <div className="text-3xl font-bold mb-4 sticky top-0 py-3 flex items-center text-slate-900 dark:text-slate-200  backdrop-blur-sm ">
+      <div className="container mx-auto  sm:px-0 relative ">
+        <div className="text-3xl px-4 font-bold mb-4 sticky top-0 py-3 flex items-center text-slate-900 dark:text-slate-200  backdrop-blur-sm ">
           {props.themeConfig.title}
         </div>
 
 
-        <div className="mt-2 mb-8">
+        <div className="mt-2 mb-8 max-w-2xl  px-4">
           <div className="flex gap-2 dark:text-gray-400">
             {props.themeConfig.links?.map((link, index) => {
               return (
@@ -33,7 +33,7 @@ export default function Home(props: HomePageThemeProps) {
 
         </div>
 
-        <div>
+        <div className=" px-4">
           {props.posts.map(post => {
             return (
               <div key={post.id} className="text-xl my-8">
